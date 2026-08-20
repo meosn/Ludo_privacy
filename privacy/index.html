@@ -48,8 +48,7 @@
     overflow: hidden;
   }
 
-  main::before,
-  main::after {
+  main::before {
     content: "";
     position: absolute;
     z-index: 0;
@@ -72,19 +71,6 @@
       #fff8e6;
     border: 2px solid rgba(75, 47, 18, 0.22);
     transform: rotate(11deg);
-  }
-
-  main::after {
-    width: 58px;
-    height: 86px;
-    right: 40px;
-    bottom: 22px;
-    border-radius: 50% 50% 46% 46%;
-    background:
-      radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.55) 0 9px, transparent 10px),
-      linear-gradient(180deg, #45c773, #21884b);
-    border: 2px solid rgba(17, 92, 48, 0.24);
-    transform: rotate(-10deg);
   }
 
   .content { position: relative; z-index: 1; }
@@ -113,7 +99,6 @@
     body { padding: 14px 10px 40px; background-attachment: scroll; }
     main { padding: 26px 18px 34px; border-radius: 14px; }
     main::before { width: 58px; height: 58px; top: 14px; right: 14px; opacity: 0.8; }
-    main::after { width: 38px; height: 56px; right: 18px; bottom: 14px; opacity: 0.75; }
     h1 { max-width: 260px; font-size: 27px; }
     h2 { font-size: 18px; }
     p, li { font-size: 15px; }
